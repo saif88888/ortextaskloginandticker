@@ -17,7 +17,7 @@ export default function Login() {
 	const [current, setCurrent] = useState(null);
 	useEffect(() => {
 		const client = new W3CWebSocket(
-			'ws://stream.tradingeconomics.com/?client=guest:guest'
+			'wss://stream.tradingeconomics.com/?client=guest:guest'
 		);
 		client.onopen = function (e) {
 			console.log('Connection established!');
